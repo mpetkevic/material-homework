@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/material-homework/static/css/main.b22c1288.chunk.css",
+    "main.js": "/material-homework/static/js/main.27bc5744.chunk.js",
+    "main.js.map": "/material-homework/static/js/main.27bc5744.chunk.js.map",
+    "runtime~main.js": "/material-homework/static/js/runtime~main.87d36740.js",
+    "runtime~main.js.map": "/material-homework/static/js/runtime~main.87d36740.js.map",
+    "static/js/2.31f499db.chunk.js": "/material-homework/static/js/2.31f499db.chunk.js",
+    "static/js/2.31f499db.chunk.js.map": "/material-homework/static/js/2.31f499db.chunk.js.map",
+    "index.html": "/material-homework/index.html",
+    "precache-manifest.6789f39fa78dc8375e9c22bf14fd3a0f.js": "/material-homework/precache-manifest.6789f39fa78dc8375e9c22bf14fd3a0f.js",
+    "service-worker.js": "/material-homework/service-worker.js",
+    "static/css/main.b22c1288.chunk.css.map": "/material-homework/static/css/main.b22c1288.chunk.css.map"
+  }
+}
