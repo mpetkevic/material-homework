@@ -2,12 +2,19 @@
   "name": "new_hw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mpetkevic.github.io/material-homework",
   "dependencies": {
+    "@material/react-button": "^0.12.0",
+    "@material/react-material-icon": "^0.12.0",
+    "@material/react-text-field": "^0.12.0",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

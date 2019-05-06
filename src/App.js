@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Button from '@material/react-button';
+import TextField, {HelperText, Input} from '@material/react-text-field';
+import MaterialIcon from '@material/react-material-icon';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+class App extends Component {
+  state = {
+
+  }
+  render() {
+    return (
+      <div className="App">
+        <TextField
+          label='Username'
+          helperText={<HelperText>Enter username</HelperText>}
+          onTrailingIconSelect={() => this.setState({username: ''})}
+          trailingIcon={<MaterialIcon role="button" icon="clean"/>}
+        ><Input
+          value={this.state.username}
+          onChange={(e) => this.setState({username: e.currentTarget.value})} />
+        </TextField>
+        <TextField
+          label='Email'
+          helperText={<HelperText>Enter email</HelperText>}
+          onTrailingIconSelect={() => this.setState({email: ''})}
+          trailingIcon={<MaterialIcon role="button" icon="clean"/>}
+        ><Input
+          value={this.state.email}
+          onChange={(e) => this.setState({email: e.currentTarget.value})} />
+        </TextField>
+        <Button
+          raised
+          className='button-alternate'
+          onClick={() => console.log('clicked!')}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          Submit
+        </Button>
+      </div>
+    );
+  }
 }
 
 export default App;

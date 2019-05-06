@@ -1,0 +1,10 @@
+@import "~@material/react-button/index.scss";
+@import '~@material/react-text-field/index.scss';
+
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
